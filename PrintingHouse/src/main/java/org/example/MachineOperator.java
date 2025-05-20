@@ -1,4 +1,4 @@
-package org.example.workers;
+package org.example;
 
 public class MachineOperator extends Employee {
     public MachineOperator(String name, double baseSalary) {

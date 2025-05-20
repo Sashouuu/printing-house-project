@@ -1,6 +1,6 @@
-package org.example.workers;
+package org.example;
 
-public class Manager extends Employee{
+public class Manager extends Employee {
     private double bonusPercentage;
     private double revenueThreshold;
 

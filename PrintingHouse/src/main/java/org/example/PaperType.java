@@ -1,4 +1,4 @@
-package org.example.publication;
+package org.example;
 
 //Enum for paper type
 public enum PaperType {

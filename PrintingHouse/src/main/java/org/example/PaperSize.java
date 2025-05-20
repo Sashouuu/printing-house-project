@@ -1,4 +1,4 @@
-package org.example.publication;
+package org.example;
 
 // Enumeration for paper size
 public enum PaperSize {
