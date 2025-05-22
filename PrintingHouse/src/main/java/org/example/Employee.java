@@ -1,6 +1,7 @@
 package org.example;
+import java.io.*;
 
-public abstract class Employee {
+public abstract class Employee implements Serializable {
     protected String name;
     protected double baseSalary;
 
