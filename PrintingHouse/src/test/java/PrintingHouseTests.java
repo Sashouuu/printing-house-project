@@ -1,5 +1,4 @@
 package org.example;
-
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -99,4 +98,13 @@ public class PrintingHouseTests {
         assertEquals(1000 + 2200, salaryExpenses);
         assertEquals(paperExpenses, house.calculatePaperExpenses());
     }
+
+    @Test
+    public void testPrintingMachineNotEnoughPaper() {
+        PrintingMachine machine = new PrintingMachine("M5", true, 100, 100);
+        Publication pub = new Publication("LargeDoc", 10, PaperSize.A4, PaperType.STANDARD, 20, 100, 10);
+        machine.loadPaper(50); // < 200 needed
+        assertThrows(RuntimeException.class, () -> machine.printPublication(pub, PrintMode.COLOR));
+    }
+
 }

@@ -4,7 +4,7 @@ package org.example;
 public enum PaperSize {
     A5, A4, A3, A2, A1;
 
-    //Method to calculate price
+    //price factor for eac different paper size
     public double getPriceFactor(){
         switch(this){
             case A5: return 1.0;

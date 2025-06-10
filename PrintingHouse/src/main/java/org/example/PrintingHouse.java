@@ -5,6 +5,14 @@ public class PrintingHouse {
     private List<Employee> employees = new ArrayList<>();
     private List<PaperPurchase> paperPurchases = new ArrayList<>();
 
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+
+    public List<PaperPurchase> getPaperPurchases() {
+        return paperPurchases;
+    }
+
     public void addEmployee(Employee employee) {
         employees.add(employee);
     }
@@ -23,5 +31,13 @@ public class PrintingHouse {
         return paperPurchases.stream()
                 .mapToDouble(PaperPurchase::calculateCost)
                 .sum();
+    }
+
+    @Override
+    public String toString() {
+        return "PrintingHouse{" +
+                "employees=" + employees +
+                ", paperPurchases=" + paperPurchases +
+                '}';
     }
 }

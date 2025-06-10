@@ -7,6 +7,15 @@ public class MachineOperator extends Employee {
 
     @Override
     public double calculateSalary(double totalRevenue) {
-        return baseSalary;
+
+        return baseSalary; //salary is known
+    }
+
+    @Override
+    public String toString() {
+        return "MachineOperator{" +
+                "name='" + name + '\'' +
+                ", baseSalary=" + baseSalary +
+                '}';
     }
 }

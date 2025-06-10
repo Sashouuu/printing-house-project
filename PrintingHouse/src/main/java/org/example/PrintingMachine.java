@@ -45,4 +45,16 @@ class PrintingMachine {
                 .mapToInt(e -> e.getKey().getPageCount() * e.getValue())
                 .sum();
     }
+
+    @Override
+    public String toString() {
+        return "PrintingMachine{" +
+                "id='" + id + '\'' +
+                ", supportsColor=" + supportsColor +
+                ", maxPaperCapacity=" + maxPaperCapacity +
+                ", speedPagesPerMinute=" + speedPagesPerMinute +
+                ", loadedPaper=" + loadedPaper +
+                ", printedPublications=" + printedPublications +
+                '}';
+    }
 }

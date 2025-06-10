@@ -11,6 +11,13 @@ class Publication {
 
     public Publication(String title, int pageCount, PaperSize size, PaperType type,
                        int quantity, int discountThreshold, double discountPercent) {
+        if (pageCount <= 0 || quantity <= 0) {
+            throw new IllegalArgumentException("Page count and quantity must be positive.");
+        }
+        if (discountPercent < 0 || discountPercent > 100) {
+            throw new IllegalArgumentException("Discount must be between 0 and 100.");
+        }
+
         this.title = title;
         this.pageCount = pageCount;
         this.size = size;
