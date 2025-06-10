@@ -1,0 +1,5 @@
+Revenue: 3240.0
+Salaries: 3000.0
+Paper Costs: 54.0
+Total Expenses: 3054.0
+Profit: 186.0

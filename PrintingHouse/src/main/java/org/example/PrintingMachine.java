@@ -46,6 +46,17 @@ class PrintingMachine {
                 .sum();
     }
 
+    // Проверка дали има достатъчно хартия
+    public boolean hasEnoughPaper(int pagesNeeded) {
+        return loadedPaper >= pagesNeeded;
+    }
+
+    // Геттер за заредена хартия (по избор, за логове)
+    public int getLoadedPaper() {
+        return loadedPaper;
+    }
+
+
     @Override
     public String toString() {
         return "PrintingMachine{" +
