@@ -59,9 +59,11 @@ public class Main {
                 "\nPaper Costs: " + paperCosts +
                 "\nTotal Expenses: " + (salaries + paperCosts) +
                 "\nProfit: " + (revenue - salaries - paperCosts);
-
-        System.out.println("\n--- Report ---\n" + report);
         saveReportToFile("report.txt", report);
+
+        String loaded = readReportFromFile("report.txt");
+        System.out.println("\nRead from file:\n" + loaded);
+
     }
 
     // Save report data to text file
